@@ -198,7 +198,7 @@ nav {
 }
 
 .nav-links a {
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-left: 20px;
   text-decoration: none;
   color: #333;
@@ -226,9 +226,11 @@ strong {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h1,
-h2 {
+h1 {
   margin-bottom: 4rem;
+}
+h2 {
+  margin-bottom: 2rem;
 }
 
 h1 {
