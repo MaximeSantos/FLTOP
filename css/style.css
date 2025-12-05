@@ -305,6 +305,10 @@ em {
     max-width: 70vw;
     padding: 1rem;
   }
+
+  img.picture-stand {
+    max-width: 70vw;
+  }
 }
 
 /* Responsive for phones under 600px wide */
@@ -323,13 +327,14 @@ em {
     flex-direction: column;
     height: auto;
     width: auto;
-    background: linear-gradient(
+    background: #f0f0f0;
+    /* background: linear-gradient(
       180deg,
       #117f02 0%,
       #117f02 35%,
       #f0f0f0 80%,
       #f0f0f0 100%
-    );
+    ); */
   }
   a.logo {
     margin: auto;
@@ -341,5 +346,9 @@ em {
   footer {
     padding: 1rem;
     width: auto;
+  }
+
+  img.picture-stand {
+    max-width: 100%;
   }
 }
