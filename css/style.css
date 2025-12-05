@@ -133,7 +133,7 @@ table {
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #fff;
+  background-color: #f0f0f0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -143,7 +143,7 @@ body {
 
 .hero {
   width: 100%;
-  height: calc(100vh - 200px); /* 150px height of header + 25px for of padding */
+  height: calc(100vh - 200px); /* 150px height of header + 2*25px for of padding */
   background-image: url('../assets/cassette2.jpg');
   background-size: cover;
   background-position: center;
@@ -151,11 +151,10 @@ body {
   align-items: center;
   justify-content: center;
   z-index: 0;
-  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.35);
 }
 
 .hero h1 {
-  color: #fff;
+  color: #f0f0f0;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   font-size: 5rem;
   text-align: center;
@@ -169,7 +168,7 @@ body {
 
 .container {
   margin: 2rem;
-  max-width: 50vw;
+  max-width: 40vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -184,8 +183,19 @@ header {
   align-items: center;
   padding: 25px 0;
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3);
-  background: linear-gradient(135deg, #117f02 0%, #117f02 20%, #fff 70%, #fff 100%);
+  background: linear-gradient(135deg, #117f02 0%, #117f02 20%, #f0f0f0 70%, #f0f0f0 100%);
   z-index: 1;
+}
+
+footer {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 -5px 24px rgba(0, 0, 0, 0.05);
+  /* background: linear-gradient(135deg, #f0f0f0 0%, #f0f0f0 20%, #117f02 70%, #117f02 100%); */
+  margin-top: 4rem;
 }
 
 nav {
@@ -217,20 +227,19 @@ nav {
 
 h1,
 h2,
-h3,
 p,
 b,
 strong {
   color: #333;
-  margin-bottom: 2rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h1 {
   margin-bottom: 4rem;
 }
-h2 {
-  margin-bottom: 2rem;
+h2,
+h3 {
+  margin: 2rem 0;
 }
 
 h1 {
@@ -256,20 +265,34 @@ h3 {
   font-weight: bold;
 }
 
-.secondary {
-  margin-top: 4rem;
+p {
+  line-height: 1.5;
+  margin-bottom: 1rem;
 }
 
-.secondary,
-.secondary str {
-  color: #555;
+h1,
+h2 {
+  text-transform: uppercase;
 }
 
-.contact-info a {
-  color: #007bff;
-  text-decoration: none;
+i,
+em {
+  font-style: italic;
 }
 
-.contact-info a:hover {
+section {
+  width: 100%;
+}
+
+.indent {
+  margin-left: 2rem;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0;
+}
+
+.italic-underline {
+  font-style: italic;
   text-decoration: underline;
 }
