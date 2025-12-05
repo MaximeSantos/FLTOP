@@ -172,6 +172,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  flex-grow: 1;
 }
 
 header {
@@ -237,8 +238,8 @@ strong {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h1 {
-  margin-bottom: 4rem;
+h1:not(.page-title) {
+  margin: 4rem 0;
 }
 h2,
 h3 {
