@@ -167,7 +167,6 @@ body {
 }
 
 .container {
-  margin: 2rem;
   max-width: 40vw;
   display: flex;
   flex-direction: column;
@@ -203,17 +202,21 @@ nav {
   align-items: center;
 }
 
-.nav-links {
+section:nth-child(n + 2) {
+  margin-top: 2rem;
+}
+
+nav {
   margin-right: 4rem;
 }
 
-.nav-links a {
+nav a {
   font-size: 1.2rem;
   margin-left: 20px;
   text-decoration: none;
   color: #333;
 }
-.nav-links a:hover {
+nav a:hover {
   color: #117f02;
 }
 
@@ -295,4 +298,49 @@ section {
 .italic-underline {
   font-style: italic;
   text-decoration: underline;
+}
+
+/* Responsive for tablets under 900px wide */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .container {
+    max-width: 70vw;
+    padding: 1rem;
+  }
+}
+
+/* Responsive for phones under 600px wide */
+@media only screen and (max-width: 600px) {
+  .container {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    padding: 2rem;
+  }
+
+  header {
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    background: linear-gradient(
+      180deg,
+      #117f02 0%,
+      #117f02 35%,
+      #f0f0f0 80%,
+      #f0f0f0 100%
+    );
+  }
+  a.logo {
+    margin: auto;
+  }
+  nav {
+    width: auto;
+    margin: 2rem;
+  }
+  footer {
+    padding: 1rem;
+    width: auto;
+  }
 }
