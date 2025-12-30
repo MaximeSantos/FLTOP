@@ -188,7 +188,7 @@ header {
   align-items: center;
   padding: 25px 0;
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3);
-  background: linear-gradient(135deg, #117f02 0%, #117f02 20%, #f0f0f0 70%, #f0f0f0 100%);
+  background: linear-gradient(135deg, #117f02 0%, #117f02 10%, #f0f0f0 60%, #f0f0f0 100%);
   z-index: 1;
 }
 .logo {
@@ -235,7 +235,7 @@ img.picture-stand {
   max-width: 40vw;
   margin: 1rem 0;
   height: auto;
-  box-shadow: 0 10px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 }
 
 h1:not(.page-title) {
@@ -268,7 +268,7 @@ p {
   font-size: 1rem;
 }
 a {
-  color: #200fbd;
+  color: #1f1296;
 }
 
 b,
@@ -291,8 +291,17 @@ em {
 .indent {
   margin-left: 2rem;
 }
+.indent-double {
+  margin-left: 4rem;
+}
 .no-margin-bottom {
   margin-bottom: 0;
+}
+.mb {
+  margin-bottom: 1rem;
+}
+.mt {
+  margin-top: 1rem;
 }
 .italic-underline {
   font-style: italic;
