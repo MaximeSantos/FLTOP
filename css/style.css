@@ -231,13 +231,22 @@ section:nth-child(n + 2) {
   margin-top: 2rem;
 }
 
+/* Pictures and iframes */
 img.picture-stand {
   max-width: 40vw;
   margin: 1rem 0;
   height: auto;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 }
+iframe {
+  width: 40vw;
+  min-height: 600px;
+  border: none;
+  margin-top: 1rem;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
 
+/* Text elements */
 h1:not(.page-title) {
   margin: 4rem 0;
 }
@@ -318,6 +327,10 @@ em {
   img.picture-stand {
     max-width: 70vw;
   }
+  iframe {
+    width: 70vw;
+    height: max-content;
+  }
 }
 
 /* Responsive for phones under 600px wide */
@@ -359,5 +372,9 @@ em {
 
   img.picture-stand {
     max-width: 100%;
+  }
+  iframe {
+    width: 100%;
+    height: max-content;
   }
 }
