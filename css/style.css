@@ -242,10 +242,11 @@ footer > div > p {
 
 section {
   width: 100%;
+  margin-bottom: 2rem;
 }
-section:nth-child(n + 2) {
+/* section:nth-child(n + 2) {
   margin-top: 2rem;
-}
+} */
 
 /* Pictures and iframes */
 img.picture-stand {
