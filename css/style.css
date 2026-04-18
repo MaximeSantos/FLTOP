@@ -261,6 +261,9 @@ iframe {
   margin-top: 1rem;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 }
+iframe#calendar {
+  min-height: 100vh;
+}
 
 /* Text elements */
 h1:not(.page-title) {
