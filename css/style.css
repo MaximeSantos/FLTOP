@@ -267,10 +267,12 @@ img.picture-stand {
   height: auto;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 }
-img.sponsor {
-  max-width: 600px;
-  margin: 4rem 0;
+img.sponsor-image {
+  max-width: 300px;
+  max-height: 300px;
+  margin: 2rem;
   height: auto;
+  vertical-align: center;
 }
 img.footer-blason {
   max-width: 150px;
@@ -439,7 +441,7 @@ em {
   }
 
   img.picture-stand,
-  img.sponsor {
+  img.sponsor-image {
     max-width: 100%;
   }
 
