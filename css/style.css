@@ -180,6 +180,12 @@ body {
   flex-grow: 1;
 }
 
+.sponsor-container-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 header {
   height: 150px;
   width: 100%;
@@ -284,7 +290,6 @@ img.picture-stand {
   max-width: 300px;
   max-height: 300px;
   margin: 2rem;
-  height: auto;
   vertical-align: center;
 }
 img.footer-sponsor-image {
@@ -427,6 +432,10 @@ em {
   header nav {
     margin-right: 0.5rem;
   }
+
+  .sponsor-container-row {
+    flex-direction: column;
+  }
 }
 
 /* Responsive for phones under 600px wide */
@@ -457,6 +466,10 @@ em {
   }
   a.logo {
     margin: auto;
+  }
+
+  .sponsor-container-row {
+    flex-direction: column;
   }
 
   footer {
