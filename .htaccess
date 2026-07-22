@@ -9,3 +9,7 @@ DirectoryIndex index.html
 
 # Disables directory listing to prevent browsing of folder contents
 Options -Indexes
+
+# Prevent clickjacking / embedding in iframes on other sites
+Header set X-Frame-Options "SAMEORIGIN"
+Header set Content-Security-Policy "frame-ancestors 'self'"
