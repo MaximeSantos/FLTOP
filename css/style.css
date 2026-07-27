@@ -180,12 +180,6 @@ body {
   flex-grow: 1;
 }
 
-.sponsor-container-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 header {
   height: 150px;
   width: 100%;
@@ -292,6 +286,11 @@ img.picture-stand {
   margin: 2rem;
   vertical-align: center;
 }
+.boutique-image {
+  max-width: 100%;
+  margin: 2rem;
+  vertical-align: center;
+}
 img.footer-sponsor-image {
   max-width: 100px;
   max-height: 100px;
@@ -365,13 +364,27 @@ em {
   font-style: italic;
 }
 
-.sponsor-p-large {
+/* Style specific classes */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.p-large,
+.a-large {
   font-size: 1.7rem;
   font-weight: bold;
   text-align: center;
 }
+.a-large {
+  text-decoration: underline;
+}
 
-/* Style specific classes */
 .indent {
   margin-left: 2rem;
 }
@@ -439,7 +452,7 @@ em {
     margin-right: 0.5rem;
   }
 
-  .sponsor-container-row {
+  .flex-center {
     flex-direction: column;
   }
 }
@@ -474,7 +487,7 @@ em {
     margin: auto;
   }
 
-  .sponsor-container-row {
+  .flex-center {
     flex-direction: column;
   }
 
@@ -490,8 +503,10 @@ em {
   }
 
   img.picture-stand,
-  sponsor-image {
+  .sponsor-image,
+  .boutique-image {
     max-width: 100%;
+    margin: 5px;
   }
 
   iframe {
