@@ -394,6 +394,9 @@ em {
 .no-margin-bottom {
   margin-bottom: 0;
 }
+.m-05 {
+  margin: 0.5rem;
+}
 .mb {
   margin-bottom: 1rem;
 }
