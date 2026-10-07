@@ -172,9 +172,8 @@ body {
 }
 
 .container {
-  /* max-width: 40vw; */
-  margin-left: 30vw;
-  margin-right: 30vw;
+  margin-left: 25vw;
+  margin-right: 25vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -381,6 +380,67 @@ em {
   font-style: italic;
 }
 
+/* Table specific styling */
+:root {
+  --bg: #f0f0f0;
+  --line: #555;
+  --head: #e2e2e2;
+  /* --note: #f0f0f0; */
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+table {
+  border-collapse: collapse;
+}
+th,
+td {
+  border: 1px solid var(--line);
+  padding: 5px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 0.9rem;
+  overflow-wrap: break-word;
+}
+th {
+  background: var(--head);
+}
+th small {
+  display: block;
+  font-weight: 200;
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+colgroup:not(:first-child) {
+  border-left: 2px solid var(--line);
+}
+
+.table-last-row {
+  font-style: italic;
+}
+.arrow {
+  display: block;
+  font-size: 1.1rem;
+}
+.notes {
+  margin-top: 20px;
+  border: 1px solid var(--line);
+}
+.notes p {
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  /* background: var(--note); */
+  border-bottom: 1px solid var(--line);
+  font-size: 0.9rem;
+}
+.notes p:last-child {
+  border-bottom: 0;
+}
+
 /* Style specific classes */
 .flex-center {
   display: flex;
@@ -428,7 +488,9 @@ em {
 /* Responsive for tablets under 1100px wide */
 @media only screen and (min-width: 601px) and (max-width: 1100px) {
   .container {
-    max-width: 70vw;
+    /* max-width: 70vw; */
+    margin-left: 15vw;
+    margin-right: 15vw;
     padding: 1rem;
   }
 
