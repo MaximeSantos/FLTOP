@@ -407,6 +407,7 @@ td {
 }
 th {
   background: var(--head);
+  font-weight: 600;
 }
 th small {
   display: block;
