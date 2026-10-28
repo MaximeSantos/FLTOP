@@ -490,9 +490,14 @@ colgroup:not(:first-child) {
 @media only screen and (min-width: 601px) and (max-width: 1100px) {
   .container {
     /* max-width: 70vw; */
-    margin-left: 15vw;
-    margin-right: 15vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
     padding: 1rem;
+  }
+
+  .table-container {
+    overflow: scroll;
+    max-width: 100%;
   }
 
   header {
@@ -506,7 +511,7 @@ colgroup:not(:first-child) {
     );
   }
   header nav {
-    margin-right: 1rem;
+    margin-right: 0.5rem;
   }
 
   img.picture-stand {
@@ -531,6 +536,11 @@ colgroup:not(:first-child) {
 /* Responsive for tablets under 900px wide */
 
 @media only screen and (min-width: 601px) and (max-width: 900px) {
+  .table-container {
+    overflow: scroll;
+    max-width: 100%;
+  }
+
   header nav {
     margin-right: 0.5rem;
   }
@@ -547,6 +557,11 @@ colgroup:not(:first-child) {
     padding: 1rem;
     margin-left: 2vw;
     margin-right: 2vw;
+  }
+
+  .table-container {
+    overflow: scroll;
+    max-width: 85vw;
   }
 
   .hero h1 {
